@@ -1,0 +1,30 @@
+{
+  "Classic MLP": {
+    "layers": [3, 64, 64, 64, 64, 64, 64, 64, 3],
+    "activation": "tanh"
+  },
+  "MLP with FF": {
+    "input_dim": 3,
+    "layers": [64, 64, 64, 64, 64, 64, 64, 3],
+    "activation": "tanh",
+    "sigma": 0.5
+  },
+  "Mask": {
+    "input_dim": 3,
+    "output_dim": 3,
+    "hidden_dim": 64,
+    "num_blocks": 3,
+    "sigma": 0.5,
+    "activation": "tanh",
+    "FourierFeatures": 0
+  },
+  "Mask + FF": {
+        "input_dim": 3,
+    "output_dim": 3,
+    "hidden_dim": 64,
+    "num_blocks": 3,
+    "sigma": 0.5,
+    "activation": "tanh",
+    "FourierFeatures": 1
+  }
+}
