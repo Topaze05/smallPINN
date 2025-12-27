@@ -26,4 +26,4 @@ def demo_adapted_TRM(dataset_path: str, n :int, T: int):
 
 
 if __name__ == "__main__":
-    demo_adapted_TRM("D:/dataset/2D_rdb_train_huv_small.h5", 3, 5)
+    demo_adapted_TRM("path_of_your_dataset", 3, 5)

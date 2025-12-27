@@ -490,7 +490,7 @@ class SWE_2D:
 def comparison_all_models(dataset_path):
     dataloader = SWEDataloader(dataset_path, batch_size=50)
 
-    with open("Project/config_comparison.json", "r") as f:
+    with open("config_comparison.json", "r") as f:
         data = json.load(f)
 
     ls_model_names = data.keys()
@@ -525,7 +525,7 @@ def comparison_all_models(dataset_path):
         del model
         torch.cuda.empty_cache()
 
-    with open("Project/results.json", "w") as f:
+    with open("results.json", "w") as f:
         json.dump(results, f)
 
 
@@ -550,7 +550,7 @@ def comparison_new_approach(dataset_path):
         del swe_model
         torch.cuda.empty_cache()
 
-    with open("Project/result_proposed_approach.json", "w") as f:
+    with open("result_proposed_approach.json", "w") as f:
         json.dump(results, f)
 
 if __name__ == "__main__":
